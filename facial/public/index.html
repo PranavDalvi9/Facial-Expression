@@ -25,8 +25,10 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
 
-    <meta name="mphtools-feature" content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck">
-
+    <meta
+      name="mphtools-feature"
+      content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck"
+    />
 
     <title>React App</title>
   </head>
@@ -35,9 +37,16 @@
     <div id="root"></div>
 
     <script src="https://sdk.morphcast.com/mphtools/v1.0/mphtools.js"></script>
-<script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
+    <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
 
 
+    <script>
+      function navBar(){
+        return `<h1>hello</h2>`
+      }
+
+      export default navBar
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
