@@ -12,7 +12,7 @@
 
     <div class="mainDiv">
       <div class="mainDiv1" id="mainDivCamera">
-        <div id="CamCenterDiv" ></div>
+        <div id="CamCenterDiv"></div>
       </div>
       <div class="mainDiv2">
         <div class="aiScoring"><p>AI Scoring</p></div>
@@ -147,11 +147,8 @@
       ctx.putImageData(imageData, 0, 0);
     });
 
- 
-
     window.addEventListener(CY.modules().FACE_EMOTION.eventName, (evt) => {
       console.log("Emotion result", evt.detail.output.emotion);
-     
 
       //append height
       document.getElementById("happyLine").style.height = `${
@@ -213,10 +210,9 @@
         console.log("trial", newArousal);
         document.getElementById("arousalDiv").style.width = `${newArousal}px`;
 
-                     if(valenceCt > 0){
-          var newValence = ((valenceCt.toFixed(2))*100)+100
-        }
-        else{
+        if (valenceCt > 0) {
+          var newValence = valenceCt.toFixed(2) * 100 + 100;
+        } else {
           var newValence = valenceCt.toFixed(2) * -100;
         }
 
@@ -233,6 +229,7 @@
     });
   </script>
 </html>
+
 
 
 <!-- https://face-recognize-pranav-dalvi.vercel.app/ -->
