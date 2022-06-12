@@ -27,6 +27,8 @@ Project Deployed Link - [Project Deployed Link](https://face-recognize-pranav-da
 # Glimpse of Our Work:-
 ## Landing Page:-
 
+<img width="816" alt="image" src="https://user-images.githubusercontent.com/96105012/173223889-a5287b74-a974-4ea6-934a-78b0148019ce.png">
+
 
 
 ## Output of Project:- 
