@@ -29,6 +29,7 @@ Project Deployed Link - [Project Deployed Link](https://face-recognize-pranav-da
 
 <img width="816" alt="image" src="https://user-images.githubusercontent.com/96105012/173223889-a5287b74-a974-4ea6-934a-78b0148019ce.png">
 
+<img width="830" alt="image" src="https://user-images.githubusercontent.com/96105012/173223919-6b5a725c-0aad-4d76-8701-047c2f1cb12e.png">
 
 
 ## Output of Project:- 
