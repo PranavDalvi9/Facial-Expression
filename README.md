@@ -33,4 +33,4 @@ Project Deployed Link - [Project Deployed Link](https://face-recognize-pranav-da
 
 
 ## Output of Project:- 
-[Video Presentation]()
+[Video Presentation](https://drive.google.com/file/d/16hspnI0af7ITs7I0dUPCdWlaMbZmZgqf/view?usp=sharing)
