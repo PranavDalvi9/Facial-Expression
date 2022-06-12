@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>MorphCast AI HTML5 SDK - Base example</title>
+    <title>Face Recognize Pranav Dalvi</title>
     <meta
       name="mphtools-feature"
       content="compatibilityUI, cameraPrivacyPopup, compatibilityAutoCheck"
@@ -121,18 +121,15 @@
   <script src="https://sdk.morphcast.com/mphtools/v1.0/mphtools.js"></script>
   <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
   <script>
-
     const arr = [
       "https://static.videezy.com/system/resources/previews/000/036/007/original/boy1.mp4",
       "https://static.videezy.com/system/resources/previews/000/035/639/original/business150.mp4",
-      "https://assets.mixkit.co/videos/preview/mixkit-girl-smiling-portrait-in-the-library-4756-large.mp4"
-    ]
-    const customSource = CY.createSource.fromVideoUrl(
-     arr[2]
-    );
+      "https://assets.mixkit.co/videos/preview/mixkit-girl-smiling-portrait-in-the-library-4756-large.mp4",
+    ];
+    const customSource = CY.createSource.fromVideoUrl(arr[2]);
     CY.loader()
       .licenseKey("d668f3b857964b72755513c8bfd9b58e10ce6a216bdc")
-        // .source(customSource)
+      // .source(customSource)
       .addModule(CY.modules().FACE_AGE.name)
       .addModule(CY.modules().FACE_GENDER.name)
       .addModule(CY.modules().FACE_EMOTION.name)
@@ -149,7 +146,7 @@
     document.getElementById("CamCenterDiv").append(canvas);
 
     window.addEventListener(CY.modules().CAMERA.eventName, (event) => {
-      console.log("New frame in input");
+      // console.log("New frame in input");
       const ctx = canvas.getContext("2d");
       const imageData = event.detail;
       ctx.canvas.width = imageData.width;
@@ -158,9 +155,8 @@
     });
 
     window.addEventListener(CY.modules().FACE_EMOTION.eventName, (evt) => {
-      console.log("Emotion result", evt.detail.output.emotion);
+      // console.log("Emotion result", evt.detail.output.emotion);
 
-      //append height
       document.getElementById("happyLine").style.height = `${
         evt.detail.output.emotion.Happy.toFixed(2) * 100
       }px`;
@@ -188,8 +184,6 @@
       document.getElementById("neutralLine").style.height = `${
         evt.detail.output.emotion.Neutral.toFixed(2) * 100
       }px`;
-      // append height
-      // emo_div.innerHTML = "Emotion: " + evt.detail.output.dominantEmotion;
     });
 
     window.addEventListener(
@@ -217,7 +211,7 @@
         } else {
           var newArousal = arousalCt.toFixed(2) * -100;
         }
-        console.log("trial", newArousal);
+        // console.log("trial", newArousal);
         document.getElementById("arousalDiv").style.width = `${newArousal}px`;
 
         if (valenceCt > 0) {
@@ -231,7 +225,7 @@
     );
 
     window.addEventListener(CY.modules().FACE_ATTENTION.eventName, (evt) => {
-      console.log("Face attention result", evt.detail.output.attention);
+      // console.log("Face attention result", evt.detail.output.attention);
 
       document.getElementById("attentionDiv").style.height = `${
         evt.detail.output.attention.toFixed(2) * 100
@@ -239,7 +233,5 @@
     });
   </script>
 </html>
-
-
 
 <!-- https://face-recognize-pranav-dalvi.vercel.app/ -->
