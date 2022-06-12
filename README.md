@@ -1,6 +1,6 @@
 # Facial-Expression
 
-### I have design an Facial Expression Application via which a user can determine the expression based on various parameters such as 
+### I have design an Facial Expression Application via which a user can determine the expression based on various parameters such as happy,angry,sad etc.
 
 
 # Features:-
