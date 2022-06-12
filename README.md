@@ -21,3 +21,12 @@ Pranav Dalvi - [My Linkedin](https://www.linkedin.com/in/pranavsanjaydalvi/)
 Project Link - [Project Repo](https://github.com/PranavDalvi9/Facial-Expression)
 
 Project Deployed Link - [Project Deployed Link](https://face-recognize-pranav-dalvi-pranavdalvi9.vercel.app/)
+
+
+# Glimpse of Our Work:-
+## Landing Page:-
+
+
+
+## Output of Project:- 
+[Video Presentation]()
