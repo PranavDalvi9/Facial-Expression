@@ -13,6 +13,14 @@
     <div class="mainDiv">
       <div class="mainDiv1" id="mainDivCamera">
         <div id="CamCenterDiv"></div>
+        <div>
+          <!-- <iframe src="./viedos/one.mp4" id="videoId" frameborder="0" allow="autoplay"></iframe> -->
+          <!-- <video id="videoId" autoplay width="200px" height="290px">
+            <source src="./viedos/one.mp4" type="video/mp4"  >
+          </video> -->
+
+          <!-- <video src="./viedos//one.mp4" id="videoId" width="200px" height="290px" autoplay controls></video> -->
+        </div>
         <!-- <div id="buttonsDiv">
           <button>1</button>
           <button>2</button>
@@ -121,14 +129,16 @@
   <script src="https://sdk.morphcast.com/mphtools/v1.0/mphtools.js"></script>
   <script src="https://ai-sdk.morphcast.com/v1.16/ai-sdk.js"></script>
   <script>
-    const arr = [
-      "https://static.videezy.com/system/resources/previews/000/036/007/original/boy1.mp4",
+    
+    const arr = [ "./one.mp4",
       "https://static.videezy.com/system/resources/previews/000/035/639/original/business150.mp4",
       "https://assets.mixkit.co/videos/preview/mixkit-girl-smiling-portrait-in-the-library-4756-large.mp4",
     ];
-    const customSource = CY.createSource.fromVideoUrl(arr[2]);
+    // const customSource = CY.createSource.fromVideoUrl(arr[0]);
+    // const customSource = CY.createSource.fromVideoElement(document.getElementById("videoId"));
     CY.loader()
       .licenseKey("d668f3b857964b72755513c8bfd9b58e10ce6a216bdc")
+      // .source(customSource)
       // .source(customSource)
       .addModule(CY.modules().FACE_AGE.name)
       .addModule(CY.modules().FACE_GENDER.name)
