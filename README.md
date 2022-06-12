@@ -1,6 +1,7 @@
 # Facial-Expression
 
-### I have design an Facial Expression Application where a user can check his expression.
+### I have design an Facial Expression Application via which a user can determine the expression based on various parameters such as 
+
 
 # Features:-
 1. User have to give permision to access the camera.
