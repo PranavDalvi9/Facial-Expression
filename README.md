@@ -2,7 +2,7 @@
 
 ### I have design an Facial Expression Application via which a user can determine the expression based on various parameters such as happy,angry,sad etc.
 
-
+  
 # Features:-
 1. User have to give permision to access the camera.
 2. The user will see the calculated result on the display.
